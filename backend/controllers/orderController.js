@@ -13,7 +13,7 @@ if (!process.env.STRIPE_SECRET_KEY) {
 // Initialize Stripe with the secret key
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, { apiVersion: "2022-11-15" });
 
-const frontend_url = "http://localhost:5174"; // Frontend URL
+const frontend_url = "https://food-delivery-app-frontend-kfi7.onrender.com"; // Frontend URL
 
 // First API: Place Order
 const placeOrder = async (req, res) => {
