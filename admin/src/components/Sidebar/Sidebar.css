@@ -29,7 +29,7 @@
     background-color: #222222;
     border-color: rgb(92, 92, 92);
 }
-@media (max-width:900px){  {/*when width is 900px or smaller*/}
+@media (max-width:900px){  /*when width is 900px or smaller*/
     .sidebar-option p{
         display:none;
     }
