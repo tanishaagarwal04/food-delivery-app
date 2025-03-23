@@ -14,7 +14,7 @@
 .list-table-format img{
     width:50px;
 }
-@media (max-width:600px){   {/*when width is 600px or smaller*/}
+@media (max-width:600px){   /*when width is 600px or smaller*/
     .list-table-format{
         grid-template-columns: 1fr 3fr 1fr;
         gap: 15px;
