@@ -1,0 +1,58 @@
+.header{
+    height: 34vw;
+    margin: 30 px auto;
+    background: url('/header_img.png') no-repeat; 
+    background-size: contain;
+    position: relative;
+}
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    background-color: transparent;
+    color: black;
+    animation: fadeIn 3s;
+}
+.header-contents h2{
+    background-color: transparent;
+    font-weight: 500;
+    font-size: max(4.5vw,15px);
+}
+.header-contents p{
+    background-color: transparent;
+}
+.header-contents button{
+    color: black; /* Text color inside the button */
+    background-color: transparent ; /* Button background color */
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+.header-contents button:hover{
+    background-color: rgb(198, 195, 195)
+}
+/*This code is a CSS Media Query, which applies specific styles only when the browser window or device width is 1050px or less.*/
+@media (max-width:1050px){
+    .header-contents{
+        max-width: 45%;
+    }
+}
+/*This code is a CSS Media Query, which applies specific styles only when the browser window or device width is 750px or less.*/
+@media (max-width:750px){
+    .header-contents{
+        max-width: 65%;
+    }
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+}

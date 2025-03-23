@@ -1,0 +1,95 @@
+.login-popup{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #16161690; /*The # format gives a semi-transparent background*/
+    display: grid;
+}
+.login-popup-container{
+    place-self: center;
+    width: max(23wx,330px);
+    color: #00000090;
+    background-color: whitesmoke; 
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 15px;
+    animation: fadeIn 0.5s;
+}
+.login-popup-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+.login-popup-title img{
+    width: 16px;
+    cursor: pointer;
+}
+.createORlogin-button{
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color:#1a1a1a90 ;
+    font-size: 14px;
+    cursor: pointer;
+    transition:0.3s;
+}
+.createORlogin-button:hover{
+    background-color: rgb(0, 0, 0);
+}
+.login-popup-condition{
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    margin-top: -15px;
+}
+.login-popup-condition input{
+    margin-top: 4px;
+}
+.login-popup p span{
+    color:black;
+    font-weight: 500;
+    cursor: pointer;
+}
+.login-popup-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.login-popup-inputs input{
+    outline: none;
+    border: 1px solid #c9c9c9;
+    padding: 10px 5px;
+    border-radius: 4px;
+    background-color: whitesmoke;
+}
+.password-input-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #c9c9c9;
+    border-radius: 4px;
+    position: relative;
+    color: #00000090;
+    background-color: whitesmoke;
+}
+.password-input-container input {
+    border: none;
+    background-color: transparent;
+    padding: 10px 5px;
+    font-size: 14px;
+}
+.password-input-container button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    font-size: 18px;
+}
+
+
